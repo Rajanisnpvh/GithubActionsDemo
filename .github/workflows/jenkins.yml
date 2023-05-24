@@ -1,9 +1,17 @@
-name: Trigger jenkins job
-run-name: ${{ github.actor }} is learning GitHub Actions
-  with:
-    url: http://na1qalabd1:8080/view/Visulon/
-    job_name: "jenkins_automatic_trigger"
-    user_name: rajanisn1
-    api_token: 11e8cf9f624f9747746ff0b9d01acb3325
-    wait: "true"
-    timeout: "1000"
+
+  2 | run-name: ${{ github.actor }} is learning GitHub Actions
+  3 | with:
+> 4 |  url: http://na1qalabd1:8080/view/Visulon/
+    |  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 5 |     job_name: jenkins_automatic_trigger
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 6 |     user_name: rajanisn1
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 7 |     api_token: 11e8cf9f624f9747746ff0b9d01acb3325
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 8 |     wait: "true"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 9 |     timeout: "1000"
+    | ^^^^^^^^^^^^^^^^^^^^
+-
+
