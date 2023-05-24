@@ -1,5 +1,5 @@
 name: Trigger jenkins job
- 
+run-name: ${{ github.actor }} is learning GitHub Actions
   with:
     url: http://na1qalabd1:8080/view/Visulon/
     job_name: "jenkins_automatic_trigger"
