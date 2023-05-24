@@ -1,9 +1,9 @@
 name: Trigger jenkins job
-  uses: jabbukka/jenkins-trigger@main
+ 
   with:
-    url: ${{ secrets.JENKINS_URL }}
-    job_name: "build_web_application"
-    user_name: ${{ secrets.JENKINS_USER }}
-    api_token: ${{ secrets.JENKINS_TOKEN }}
+    url: http://na1qalabd1:8080/view/Visulon/
+    job_name: "jenkins_automatic_trigger"
+    user_name: rajanisn1
+    api_token: 11e8cf9f624f9747746ff0b9d01acb3325
     wait: "true"
     timeout: "1000"
